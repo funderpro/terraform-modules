@@ -7,10 +7,12 @@ locals {
 }
 
 resource "aws_db_subnet_group" "this" {
-  count = var.replicate_source_db == null ? 1 : 0
+  count = (
+    var.replicate_source_db == null || (var.replicate_source_db != null && var.db_subnet_ids != null)
+  ) ? 1 : 0
 
   description = "Subnet group for ${local.db_identifier} DB instance"
-  subnet_ids  = var.vpc.subnets
+  subnet_ids  = var.db_subnet_ids != null ? var.db_subnet_ids : var.vpc.subnets
 }
 
 moved {
