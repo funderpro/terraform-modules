@@ -1,6 +1,14 @@
 # Changelog
 
 
+## [3.4.2](https://github.com/funderpro/terraform-modules/compare/v3.4.1...v3.4.2) (2025-09-01)
+
+
+### Bug Fixes
+
+* **rds:** Tf drift with replicate source db ([c429de4](https://github.com/funderpro/terraform-modules/commit/c429de4db787d80e3c58b4450e93ccac301e5eea))
+* **rds:** Tf drift with replicate source db ([ea676f5](https://github.com/funderpro/terraform-modules/commit/ea676f58f098683cd86eec9618d0506ec7970f03))
+
 ## [3.4.1](https://github.com/funderpro/terraform-modules/compare/v3.4.0...v3.4.1) (2025-09-01)
 
 
