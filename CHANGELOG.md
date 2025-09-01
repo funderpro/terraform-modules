@@ -1,6 +1,21 @@
 # Changelog
 
 
+## [3.4.1](https://github.com/funderpro/terraform-modules/compare/v3.4.0...v3.4.1) (2025-09-01)
+
+
+### Bug Fixes
+
+* RDS replica creation in public subnet ([947eba9](https://github.com/funderpro/terraform-modules/commit/947eba9b8b00a75cc01b76c97514ee2db6d9b4af))
+* **rds:** Create read replica in different subnet ([e164cce](https://github.com/funderpro/terraform-modules/commit/e164cce13d24a26c8a1cc3be0915bba1be8de037))
+* **rds:** Remove the duplicate subnet group ([abd9263](https://github.com/funderpro/terraform-modules/commit/abd9263629dfe6183f99226ad59d1d20e07604df))
+
+
+### Miscellaneous
+
+* **rds:** Added db subnet id to variables ([4c4d6c3](https://github.com/funderpro/terraform-modules/commit/4c4d6c3b0aa8890daac063c3f19d02e18a618ff0))
+* **rds:** Update the condtion for aws subnet group creation ([a5f46c0](https://github.com/funderpro/terraform-modules/commit/a5f46c0dc94ae61e9a8a1f79edb7b5eb00708b47))
+
 ## [3.4.0](https://github.com/funderpro/terraform-modules/compare/v4.0.1...v3.4.0) (2025-05-02)
 
 
