@@ -13,6 +13,13 @@ resource "aws_db_subnet_group" "this" {
   subnet_ids  = var.vpc.subnets
 }
 
+resource "aws_db_subnet_group" "this" {
+  count = var.replicate_source_db == null && var.db_subnet_ids != null ? 1 : 0
+
+  description = "Subnet group for ${local.db_identifier} DB instance"
+  subnet_ids  = var.db_subnet_ids != null ? var.db_subnet_ids : var.vpc.subnets
+}
+
 moved {
   from = aws_db_subnet_group.this
   to   = aws_db_subnet_group.this[0]
