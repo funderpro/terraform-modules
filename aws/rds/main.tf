@@ -71,7 +71,8 @@ resource "aws_db_instance" "this" {
 
   lifecycle {
     ignore_changes = [
-      engine_version
+      engine_version,
+      replicate_source_db
     ]
   }
 }
