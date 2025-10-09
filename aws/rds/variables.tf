@@ -175,3 +175,8 @@ variable "db_subnet_ids" {
   description = "Optional list of subnet IDs to create a custom DB subnet group."
   default     = null
 }
+
+variable "allow_major_version_upgrade" {
+  type    = bool
+  default = false
+}
