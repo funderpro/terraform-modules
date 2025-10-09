@@ -53,6 +53,7 @@ resource "aws_db_instance" "this" {
   parameter_group_name            = var.parameter_group
   multi_az                        = var.multi_az
   enabled_cloudwatch_logs_exports = var.enabled_cloudwatch_logs_exports
+  allow_major_version_upgrade     = true
 
   db_subnet_group_name = try(aws_db_subnet_group.this[0].id, null)
 
@@ -71,7 +72,6 @@ resource "aws_db_instance" "this" {
 
   lifecycle {
     ignore_changes = [
-      engine_version,
       replicate_source_db
     ]
   }
