@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [3.5.0](https://github.com/funderpro/terraform-modules/compare/v3.4.2...v3.5.0) (2025-12-02)
+
+
+### Features
+
+* **ec2:** Enable imdsv2 for ec2 instance ([afa9209](https://github.com/funderpro/terraform-modules/commit/afa92091601a4bde5009d7e3abee5b2006345ddd))
+* **ec2:** Enable imdsv2 for ec2 instance ([12a2fdc](https://github.com/funderpro/terraform-modules/commit/12a2fdc66b6ba097639a5ee6ebd9460981c9ab94))
+* **ec2:** Enable imdsv2 for ec2 instance ([1eea8e0](https://github.com/funderpro/terraform-modules/commit/1eea8e08d9d3e2fd207c839da2b9e843ab5f928b))
+* **ec2:** Enable imdsv2 for std ec2 instance ([395197f](https://github.com/funderpro/terraform-modules/commit/395197f093f5972ab7fb1e359173de82807b8a4b))
+
 ## [3.4.2](https://github.com/funderpro/terraform-modules/compare/v3.4.1...v3.4.2) (2025-09-01)
 
 
