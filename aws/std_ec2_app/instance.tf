@@ -15,6 +15,12 @@ resource "aws_instance" "this" {
   availability_zone           = var.az
   associate_public_ip_address = var.associate_public_ip
 
+  metadata_options {
+    http_endpoint               = "enabled"
+    http_tokens                 = "required"   # IMDSv2 only
+    http_put_response_hop_limit = 2
+  }
+  
   tags = merge(var.tags, {
     Name           = var.name
     AnsibleGroup   = var.ansible_group
