@@ -27,9 +27,9 @@ resource "aws_instance" "this" {
   metadata_options {
     http_endpoint               = "enabled"
     http_tokens                 = "required"   # IMDSv2 only
-    http_put_response_hop_limit = 2            # Optional but recommended
+    http_put_response_hop_limit = 2
   }
-  
+
   tags = merge(var.tags, {
     Name = var.name
   })
