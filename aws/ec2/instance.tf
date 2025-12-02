@@ -24,6 +24,12 @@ resource "aws_instance" "this" {
   availability_zone           = var.availability_zone
   disable_api_termination     = var.disable_api_termination
 
+  metadata_options {
+    http_endpoint               = "enabled"
+    http_tokens                 = "required"   # IMDSv2 only
+    http_put_response_hop_limit = 2
+  }
+
   tags = merge(var.tags, {
     Name = var.name
   })
