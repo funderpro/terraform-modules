@@ -1,6 +1,14 @@
 # Changelog
 
 
+## [3.5.1](https://github.com/funderpro/terraform-modules/compare/v3.5.0...v3.5.1) (2025-12-30)
+
+
+### Miscellaneous
+
+* **std-ec2:** Enable instance protection for std ec2 instances ([434f309](https://github.com/funderpro/terraform-modules/commit/434f3091fdc5cfa69c8ff03d8d887033bc1094ab))
+* **std-ec2:** Enable instance protection for std ec2 instances ([18b8ee6](https://github.com/funderpro/terraform-modules/commit/18b8ee6f44d7d2b2d7d653476ba0efda92b953db))
+
 ## [3.5.0](https://github.com/funderpro/terraform-modules/compare/v3.4.2...v3.5.0) (2025-12-02)
 
 
