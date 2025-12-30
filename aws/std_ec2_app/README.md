@@ -42,6 +42,7 @@ No modules.
 | <a name="input_certbot"></a> [certbot](#input\_certbot) | n/a | <pre>object({<br/>    fqdn                 = string<br/>    cloudflare_api_token = string<br/>    notification_email   = string<br/>    test                 = bool<br/>  })</pre> | `null` | no |
 | <a name="input_data_volume_size"></a> [data\_volume\_size](#input\_data\_volume\_size) | n/a | `number` | `null` | no |
 | <a name="input_data_volume_tags"></a> [data\_volume\_tags](#input\_data\_volume\_tags) | n/a | `map(string)` | `{}` | no |
+| <a name="input_disable_api_termination"></a> [disable\_api\_termination](#input\_disable\_api\_termination) | n/a | `bool` | `false` | no |
 | <a name="input_http_trusted_cidrs"></a> [http\_trusted\_cidrs](#input\_http\_trusted\_cidrs) | n/a | `list(string)` | <pre>[<br/>  "0.0.0.0/0"<br/>]</pre> | no |
 | <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | n/a | `string` | n/a | yes |
 | <a name="input_name"></a> [name](#input\_name) | n/a | `string` | n/a | yes |
