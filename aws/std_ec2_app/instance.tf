@@ -10,6 +10,7 @@ resource "aws_instance" "this" {
   user_data = local.user_data
 
   instance_type               = var.instance_type
+  disable_api_termination     = var.disable_api_termination
   subnet_id                   = var.subnet_id
   private_ip                  = var.private_ip
   availability_zone           = var.az
