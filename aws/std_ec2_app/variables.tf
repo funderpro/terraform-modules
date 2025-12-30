@@ -87,6 +87,12 @@ variable "associate_public_ip" {
   default = false
 }
 
+variable "disable_api_termination" {
+  type = bool
+
+  default = false
+}
+
 variable "tags" {
   type = map(string)
 
