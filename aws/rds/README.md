@@ -119,6 +119,7 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_allocated_storage"></a> [allocated\_storage](#input\_allocated\_storage) | Allocated DB storage in GiB. | `number` | `10` | no |
 | <a name="input_apply_immediately"></a> [apply\_immediately](#input\_apply\_immediately) | n/a | `bool` | `false` | no |
+| <a name="input_backup_replication_pre_signed_url"></a> [backup\_replication\_pre\_signed\_url](#input\_backup\_replication\_pre\_signed\_url) | Optional pre-signed URL for MySQL/MariaDB cross-region automated backups replication. | `string` | `null` | no |
 | <a name="input_backup_replication_region"></a> [backup\_replication\_region](#input\_backup\_replication\_region) | Destination region for cross-region automated backups replication. | `string` | `null` | no |
 | <a name="input_backup_replication_retention_days"></a> [backup\_replication\_retention\_days](#input\_backup\_replication\_retention\_days) | Retention period for replicated backups in the destination region. | `number` | `7` | no |
 | <a name="input_backup_retention_period"></a> [backup\_retention\_period](#input\_backup\_retention\_period) | Backup retention period in days. | `number` | `30` | no |
