@@ -93,6 +93,7 @@ No requirements.
 | Name | Version |
 |------|---------|
 | <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
+| <a name="provider_aws.replica_region"></a> [aws.replica\_region](#provider\_aws.replica\_region) | n/a |
 
 ## Modules
 
