@@ -9,7 +9,7 @@ resource "aws_db_instance_automated_backups_replication" "this" {
   retention_period       = var.backup_replication_retention_days
 
   # Only needed for MySQL/MariaDB engines
-  # pre_signed_url = var.pre_signed_url
+  pre_signed_url = var.backup_replication_pre_signed_url != "" ? var.backup_replication_pre_signed_url : null
 
   depends_on = [aws_db_instance.this]
 }

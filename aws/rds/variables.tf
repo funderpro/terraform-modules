@@ -193,3 +193,9 @@ variable "backup_replication_retention_days" {
   type        = number
   default     = 7
 }
+
+variable "backup_replication_pre_signed_url" {
+  description = "Optional pre-signed URL for MySQL/MariaDB cross-region automated backups replication."
+  type        = string
+  default     = null
+}
