@@ -1,6 +1,14 @@
 # Changelog
 
 
+## [3.6.0](https://github.com/funderpro/terraform-modules/compare/v3.5.1...v3.6.0) (2026-06-10)
+
+
+### Features
+
+* **cert:** Add optional comment for Cloudflare cert records ([ee13dbd](https://github.com/funderpro/terraform-modules/commit/ee13dbd4b2c9e4c2bf6a86d2663364798302ddea))
+* **cert:** Add optional comment for Cloudflare cert records ([a91f553](https://github.com/funderpro/terraform-modules/commit/a91f553508061d9f60a3553e4ffc63adda181716))
+
 ## [3.5.1](https://github.com/funderpro/terraform-modules/compare/v3.5.0...v3.5.1) (2025-12-30)
 
 
