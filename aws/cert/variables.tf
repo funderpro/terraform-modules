@@ -13,3 +13,9 @@ variable "deployment_env" {
   type        = string
   description = "Environment for the terraform deployment"
 }
+
+variable "comment" {
+  type        = string
+  description = "Optional comment for the Cloudflare DNS validation records"
+  default     = null
+}

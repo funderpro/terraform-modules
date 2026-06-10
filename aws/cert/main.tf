@@ -33,6 +33,7 @@ resource "cloudflare_record" "domain" {
   type            = each.value.type
   proxied         = false
   allow_overwrite = true
+  comment         = var.comment
   depends_on      = [aws_acm_certificate.cert]
 }
 

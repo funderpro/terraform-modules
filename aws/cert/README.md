@@ -29,6 +29,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_comment"></a> [comment](#input\_comment) | Optional comment for the Cloudflare DNS validation records | `string` | `null` | no |
 | <a name="input_deployment_env"></a> [deployment\_env](#input\_deployment\_env) | Environment for the terraform deployment | `string` | n/a | yes |
 | <a name="input_domain"></a> [domain](#input\_domain) | The Domain Record | `string` | n/a | yes |
 | <a name="input_subdomain"></a> [subdomain](#input\_subdomain) | Optional Subdomain | `string` | `null` | no |
