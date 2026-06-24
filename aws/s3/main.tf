@@ -28,10 +28,14 @@ resource "aws_s3_bucket_lifecycle_configuration" "this" {
 
   rule {
     id     = "Delete-${var.lifetime_days}-days"
-    status = "Enabled" # TODO what happened to enabled
+    status = "Enabled"
+
+    filter {
+      prefix = ""
+    }
 
     expiration {
-      days = var.lifetime_days # TODO is this the same value?
+      days = var.lifetime_days
     }
   }
 }

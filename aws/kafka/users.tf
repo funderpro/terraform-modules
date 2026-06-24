@@ -1,5 +1,5 @@
 module "kms" {
-  source = "github.com/TradrApi/terraform-modules//aws/kms?ref=v1"
+  source = "github.com/funderpro/terraform-modules//aws/kms?ref=v1"
 
 
   name = "${terraform.workspace}-msk-sasl-scam"
