@@ -5,6 +5,7 @@ resource "aws_ebs_volume" "this" {
   availability_zone = var.ebs.az != null ? var.ebs.az : var.availability_zone
   type              = var.ebs.type
   iops              = var.ebs.iops
+  throughput        = var.ebs.throughput
 
   tags = {
     Name = var.ebs.tagName != null ? var.ebs.tagName : "${var.name}-ebs${var.ebs.size}g"

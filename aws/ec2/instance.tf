@@ -38,6 +38,7 @@ resource "aws_instance" "this" {
     volume_size = var.root_volume_size
     volume_type = var.root_volume_type
     iops        = var.iops
+    throughput  = var.throughput
   }
 
   lifecycle {

@@ -26,6 +26,7 @@ variable "ebs" {
     az          = optional(string)
     type        = optional(string)
     iops        = optional(string)
+    throughput  = optional(string)
     tagName     = optional(string)
   })
 
@@ -124,6 +125,11 @@ variable "root_volume_type" {
 }
 
 variable "iops" {
+  type    = number
+  default = null
+}
+
+variable "throughput" {
   type    = number
   default = null
 }

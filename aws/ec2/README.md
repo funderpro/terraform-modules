@@ -143,7 +143,7 @@ No modules.
 | <a name="input_attach_eip"></a> [attach\_eip](#input\_attach\_eip) | n/a | `bool` | `false` | no |
 | <a name="input_availability_zone"></a> [availability\_zone](#input\_availability\_zone) | n/a | `string` | `null` | no |
 | <a name="input_disable_api_termination"></a> [disable\_api\_termination](#input\_disable\_api\_termination) | n/a | `bool` | `false` | no |
-| <a name="input_ebs"></a> [ebs](#input\_ebs) | n/a | <pre>object({<br/>    size        = number<br/>    device_name = optional(string, "xvdf")<br/>    az          = optional(string)<br/>    type        = optional(string)<br/>    iops        = optional(string)<br/>    tagName     = optional(string)<br/>  })</pre> | `null` | no |
+| <a name="input_ebs"></a> [ebs](#input\_ebs) | n/a | <pre>object({<br/>    size        = number<br/>    device_name = optional(string, "xvdf")<br/>    az          = optional(string)<br/>    type        = optional(string)<br/>    iops        = optional(string)<br/>    throughput  = optional(string)<br/>    tagName     = optional(string)<br/>  })</pre> | `null` | no |
 | <a name="input_get_password_data"></a> [get\_password\_data](#input\_get\_password\_data) | n/a | `bool` | `false` | no |
 | <a name="input_http_port"></a> [http\_port](#input\_http\_port) | n/a | `number` | `80` | no |
 | <a name="input_http_trusted_cidrs"></a> [http\_trusted\_cidrs](#input\_http\_trusted\_cidrs) | n/a | `list(string)` | `[]` | no |
@@ -162,6 +162,7 @@ No modules.
 | <a name="input_ssh_trusted_cidrs"></a> [ssh\_trusted\_cidrs](#input\_ssh\_trusted\_cidrs) | n/a | `list(string)` | `[]` | no |
 | <a name="input_subnet_id"></a> [subnet\_id](#input\_subnet\_id) | n/a | `string` | `null` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | n/a | `map(string)` | `{}` | no |
+| <a name="input_throughput"></a> [throughput](#input\_throughput) | n/a | `number` | `null` | no |
 | <a name="input_type"></a> [type](#input\_type) | n/a | `string` | `"t2.micro"` | no |
 | <a name="input_user_data"></a> [user\_data](#input\_user\_data) | n/a | `string` | `null` | no |
 | <a name="input_user_data_obj"></a> [user\_data\_obj](#input\_user\_data\_obj) | n/a | `any` | `null` | no |
