@@ -1,6 +1,14 @@
 # Changelog
 
 
+## [3.7.0](https://github.com/funderpro/terraform-modules/compare/v3.6.0...v3.7.0) (2026-07-23)
+
+
+### Features
+
+* **ec2:** Add throughput option for root and ebs volumes ([0a99b05](https://github.com/funderpro/terraform-modules/commit/0a99b0545f4e678abd569722d27b6506807aef3f))
+* **ec2:** Add throughput option for root and ebs volumes ([340fca8](https://github.com/funderpro/terraform-modules/commit/340fca8f24f5c41e2141cfe31e7cdeb816eb824a))
+
 ## [3.6.0](https://github.com/funderpro/terraform-modules/compare/v3.5.1...v3.6.0) (2026-06-10)
 
 
