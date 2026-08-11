@@ -175,3 +175,27 @@ variable "db_subnet_ids" {
   description = "Optional list of subnet IDs to create a custom DB subnet group."
   default     = null
 }
+
+variable "enable_backup_replication" {
+  description = "Whether to enable cross-region automated backups replication."
+  type        = bool
+  default     = false
+}
+
+variable "backup_replication_region" {
+  description = "Destination region for cross-region automated backups replication."
+  type        = string
+  default     = null
+}
+
+variable "backup_replication_retention_days" {
+  description = "Retention period for replicated backups in the destination region."
+  type        = number
+  default     = 7
+}
+
+variable "backup_replication_pre_signed_url" {
+  description = "Optional pre-signed URL for MySQL/MariaDB cross-region automated backups replication."
+  type        = string
+  default     = null
+}
